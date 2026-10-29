@@ -44,7 +44,14 @@ export class MySqlRepository implements Repository {
   private pool: Pool;
 
   constructor(cfg: DbConfig) {
-    this.pool = mysql.createPool({ ...cfg, connectionLimit: 10, waitForConnections: true });
+    this.pool = mysql.createPool({
+  ...cfg,
+  ...(process.env.DB_SSL === "true"
+    ? { ssl: { minVersion: "TLSv1.2" as const } }
+    : {}),
+  connectionLimit: 10,
+  waitForConnections: true,
+});
   }
 
   async ping(): Promise<void> {

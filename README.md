@@ -1,10 +1,9 @@
 # Campaign Hub
 
-[![CI](https://github.com/YOUR_USERNAME/YOUR_REPO/actions/workflows/ci.yml/badge.svg)](https://github.com/YOUR_USERNAME/YOUR_REPO/actions/workflows/ci.yml)
 ![TypeScript](https://img.shields.io/badge/TypeScript-strict-3178C6?logo=typescript&logoColor=white)
 ![License](https://img.shields.io/badge/license-MIT-green)
 
-🌐 [Live Demo](https://YOUR_DEMO_URL) · 📘 [API Documentation](https://YOUR_API_URL/docs)
+🌐 [Live Demo](https://campaign-hub-puce.vercel.app) · 📘 [API Documentation](https://campaign-hub-api-934f.onrender.com/docs/)
 
 A small full-stack tool for managing **cold-outreach campaigns and leads**. Create campaigns, bulk-import leads, move each lead through the funnel (`pending → sent → replied / bounced / unsubscribed`) and see reply and bounce rates at a glance.
 
